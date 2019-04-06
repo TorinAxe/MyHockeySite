@@ -38,11 +38,11 @@ if ($action == 'show') {
         $results = $db->query($query);
         while($row = $results->fetch_assoc()){
 
-            echo '  <td class="item_img"><a href="productdetail.php?item_id='.$row['id'].'"><img src="'.$row["image"].'" class="item_img" alt=""></a></td>
+            echo '  <td class="item_img" xmlns="http://www.w3.org/1999/html"><a href="productdetail.php?item_id=' .$row['id'].'"><img src="'.$row["image"].'" class="item_img" alt=""></a></td>
 					<td class="item_text">'.$row["name"].'</td>
 					<td align ="center"><input  id ="kol'.$row['id'].'" type ="number" autocomplete ="on" min="1" max="'.$row["quantity"].'" value="1" ></td>
                     <td class="product_price" align = "center ">'.$row["cost"].' руб.</td>
-					<td align ="center"> <input type="button" value="Убрать" onClick="delFromCart('.$row["id"].')"</td>
+					<td align ="center"> <button class="btn large_btn shadow_btn" type=button  onClick="delFromCart('.$row["id"].')">Удалить</button></td>
                 <tr></tr>
            ';
 		 $kol =  
