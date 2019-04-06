@@ -39,7 +39,7 @@ echo '<div class="block_inline right_align">
                 <input type="text" name ="searchText" required placeholder="Что искать">
                 <button class="default_btn" type="submit" name = "submit">Поиск</button>
             </form>
-            <button class="btn default_btn" type="submit"  class="btn-std" onclick="location.href="index.php">Очистить</button>
+            <button class="btn default_btn" type="submit"  class="btn-std" onclick="location.href=\'index.php\'"> Очистить</button>
       </div>';
 while ($result = mysqli_fetch_array($query)) {
     if($i == $i_max) break;
