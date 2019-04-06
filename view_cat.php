@@ -8,7 +8,12 @@ include "templates/header.php";
 include "templates/menu.php";
 include "templates/middle.php";
 include "templates/content_begin.php";
-echo '<form action="./search.php" method="post"><input type="text" name ="searchText" required placeholder="Что искать"><input type="submit" value="Поиск" name = "submit"></form>' ;
+echo '<div class="block_inline right_align">
+            <form class="search_dimon_with_utochka" action="./search.php" method="post">
+                <input type="text" name ="searchText" required placeholder="Что искать">
+                <button class="default_btn" type="submit" name = "submit">Поиск</button>
+            </form>
+      </div>';
 $cat = $_GET["category_id"];
 $cat = strip_tags($cat);//удаление html and php tags
 $cat =trim($cat);//удаление пробелов
@@ -22,8 +27,10 @@ while ($result = mysqli_fetch_array($sql)) {
             </div>    
             <div class="item_text">
                 <h3>'. $result['name'].'</h3>
-                <p class="product_price">'.$result['cost'].' руб</p>
-				<h4><input type=button value="В корзину" onClick="addToCart('.$result["id"].')"></h4>
+               <button class="btn large_btn shadow_btn" type=button onClick="addToCart('.$result["id"].')">
+				    <img width="16px" src=\'./images/cart.png\'/>
+				    <b style="font-size:18px ">&nbsp;'.$result['cost'].'&#8381;</b>
+				</button>
             </div>
         </div>';
     }
