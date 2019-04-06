@@ -1,0 +1,205 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0
+}
+
+#login  {
+	display: none;
+	border-radius: 5px ;
+	border-color: blue;
+	border-width: 5px ;
+	background-color: #CFCFCF ;
+	padding: 15px;
+	position: absolute;
+	top: 50px;
+	right: 370px;
+}
+
+#login input {
+	margin-bottom:5px;
+	padding: 2px 5px 2px 5px;
+	background-color: white;
+	height: 23px;
+	border-radius: 5px ;
+	border-color: lightgray;
+	border-width: 1px ;
+}
+
+
+#login button {
+	border-color:#999;
+	border-radius: 5px;
+	border-width:1px;
+	background-color: white;
+}
+#login .close {
+	position: absolute;
+	border: none;
+	color: red;
+	top : 5px;
+	right :5px;
+	background-color: rgba(255,255,255,0) !important;
+}
+#login .close:hover {
+	position: absolute;
+	cursor: pointer;
+	border: none;
+	color: red;
+	top : 5px;
+	right :5px;
+	background-color: rgba(255,255,255,0) !important;
+}
+
+.btn
+{
+	border-color:#999;
+	border-radius: 5px;
+	border-width:1px;
+}
+
+.btn:hover
+{
+	border-color: #FFF;
+	cursor: pointer;
+}
+
+.large{
+	padding: 0px 5px 0px 5px;
+	height: 45px;
+}
+.middle{
+	padding: 0px 15px 0px 15px;
+	height: 30px;
+}
+.small{
+	width: 45px;
+	height: 15px;
+}
+
+.light_graw{
+	background-color: #666;
+}
+.plr{
+	padding: 0px 10px 0px 10px;
+}
+
+.super_table{
+	background-color: white;
+	border-collapse: collapse;
+
+}
+.super_table th{
+	font-weight: bold;
+	color: white;
+	background-color: black;
+	border-color: black;
+	text-align: center;
+}
+.super_table td{
+	margin-bottom: 5px ;
+}
+.final_sum{
+	color: black;
+	font-size: 16px ;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 35px ;
+}
+
+.exit_btn{
+	font-size: 13px;
+	font-weight: 900;
+	color: #666;;
+	text-decoration: underline;
+	cursor: pointer;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+}
+.search_dimon_with_utochka{
+	display: inline;
+	margin-right: 15px;
+	text-align: right;
+}
+
+.search_dimon_with_utochka input {
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 250px;
+	height: 35px;
+	border-radius: 5px  0px 0px 5px;
+	background-color: #fff;
+	border-color: rgba(11, 35, 38, 1);
+	color: #333;
+}
+.search_dimon_with_utochka button {
+	margin-left: -5px;
+	cursor: pointer;
+	width: 75px;
+	height: 35px;
+	border-radius: 0px  5px 5px 0px;
+}
+
+.btn{
+	cursor: pointer;
+	width: 75px;
+	height: 35px;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+.default_btn{
+	background-color: rgba(11, 35, 38, 1);
+	border-color: rgba(11, 35, 38, 1);
+	color: #fff;
+}
+
+.lite_btn{
+	border-width: 2px ;
+	background-color: white;
+	border-color: rgba(11, 35, 38, 1);
+	color:  rgba(11, 35, 38, 1);
+}
+
+.lite_btn:hover{
+	border-width: 3px ;
+	background-color: white;
+	border-color: rgba(11, 35, 38, 1);
+	color:  rgba(11, 35, 38, 1);
+}
+
+.shadow_btn{
+	border-width: 2px ;
+	background-color: white;
+	border-color: rgba(11, 35, 38, 0);
+	color:  rgba(11, 35, 38, 1);
+}
+
+.shadow_btn:hover{
+	border-width: 2px ;
+	background-color: white;
+	border-color: rgba(11, 35, 38, 1);
+	color:  rgba(11, 35, 38, 1);
+}
+
+
+.large_btn{
+	width: 120px;
+	height: 35px;
+}
+
+.block_inline {
+	display: block;
+	width: 90%;
+}
+
+.right_align{
+	text-align: right;
+}
+
+.footer{
+	display: block;
+	height: 40px;
+	color: white;
+	vertical-align: middle;
+	background-color: rgba(11, 35, 38, 1);
+}
