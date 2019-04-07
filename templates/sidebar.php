@@ -9,4 +9,4 @@
             }
         ?>
     </ul>
-</div> <!-- END of sidebar -->
+</div>
