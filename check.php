@@ -2,7 +2,7 @@
 session_start();
 header('Content-Type: text/html; charset=utf-8');
 if($_POST['capcha'] != $_SESSION['capcha'])
-    echo "Текст с картинки введен не верно!";
+    exit ("Текст с картинки введен не верно!");
 else {
     if (isset($_POST['username'])) {
         $username = $_POST['username'];
@@ -38,9 +38,7 @@ else {
         exit ("Извините, введённый вами логин или пароль не совпадает . Проверьте правильность введенных вами данных.");
     } else {
         $_SESSION['username'] = "$username";
-        $otkuda = $_SERVER['HTTP_REFERER'];
-        //echo $otkuda;
-        header("Location: $otkuda");
+        exit("Joined");
     }
 }
 ?>
