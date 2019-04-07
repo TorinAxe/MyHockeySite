@@ -2,7 +2,7 @@
 session_start();
 header('Content-Type: text/html; charset=utf-8');
 if($_POST['capcha'] != $_SESSION['capcha'])
-    echo "Текст с картинки введен не верно!";
+    exit ("Текст с картинки введен не верно!");
 else {
     if (isset($_POST['username'])) {
         $username = $_POST['username'];
