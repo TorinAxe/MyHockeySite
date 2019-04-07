@@ -132,9 +132,11 @@
 
 .footer{
 	display: block;
+	position: absolute;
+	bottom: 0px;
 	height: 40px;
+	width: 100%;
 	color: white;
-	vertical-align: middle;
 	background-color: rgba(11, 35, 38, 1);
 }
 
