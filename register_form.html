@@ -4,6 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
     <title> Регистрация на сайте hockey_shop</title>
     <link href="css/reg_page.css" media="screen" rel="stylesheet">
+    <link href="css/main_style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/dynamicsite.js"></script>
     <script>
         function toggle_button() {
             var checbox = document.getElementById("checkbox");
@@ -144,21 +147,30 @@
             <p>11.3. Все споры, возникшие в рамках настоящего Соглашения, должны быть переданы на рассмотрение в суд в соответствии с территориальной подсудностью по месту нахождения Авито (г. Москва).</p>
             <p>11.4. Признание отдельных частей настоящего Пользовательского соглашения недействительными не отменяет действие других положений настоящего Пользовательского соглашения.</p></div>
         <div class = "accept">
-            <input type="checkbox" id="checkbox" name="accept" value="ok" onchange="toggle_button()" >Вы согласны?<br><br>
+            <input type="checkbox" id="checkbox" name="accept" value="ok" onchange="toggle_button()"> Вы согласны?<br><br>
             <input type="button" id="accept_btn" value="OK" onclick="show_reg_form()"/>
         </div>
     </div>
     <div id ="regform">
-        <form action="save.php"  method="post" name="register" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"   >
-            <input class="input" id="username" name="username"size="20" type="text" value="" placeholder="Имя пользователя" required ></br>
-            <input class="input" id="password" name="password"size="20" type="password" value="" placeholder="Пароль"  required title=""></br>
+        <form id="register_form" action="">
+            <input class="text_edit" id="username" name="username"  type="text" value="" placeholder="Имя пользователя" required ></br>
+            <input class="text_edit" id="password" name="password"  type="password" value="" placeholder="Пароль"  required title=""></br>
             <img   class="captcha"   src = "captcha.php"/><br>
-            <input class="text_edit" name="capcha" required placeholder="Введите текст с картинки"/></br>
+            <input class="text_edit" name="capcha"  placeholder="Введите текст с картинки"/></br>
             <p>
-                <button class="But" name="login"type= "submit">Регистрация</button>
+                <input type="button" class="btn lite_btn middle large_btn" id="register_btn" value ="Регистрация"/>
             </p>
             <p>Уже зарегистрированы? <a href= "index.php">Введите имя пoльзователя</a>!</p>
         </form>
+    </div>
+</div>
+<div id="module_wrapper">
+    <div id="module_window">
+        <h3><b>Товарищ, тут тебе сообщение от Вождя Народов!</b></h3>
+        <hr>
+        <span id="module_window_info"></span>
+        <hr>
+        <button id="module_window_btn" class="btn lite_btn large_btn">Прочитано</button>
     </div>
 </div>
 </body>

@@ -109,3 +109,51 @@ body, p, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldse
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
 }
+
+/*========= Button Style =========*/
+.btn{
+    cursor: pointer;
+    width: 75px;
+    height: 35px;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.default_btn{
+    background-color: rgba(11, 35, 38, 1);
+    border-color: rgba(11, 35, 38, 1);
+    color: #fff;
+}
+
+.lite_btn{
+    border-width: 2px ;
+    background-color: white;
+    border-color: rgba(11, 35, 38, 1);
+    color:  rgba(11, 35, 38, 1);
+}
+
+.lite_btn:hover{
+    border-width: 3px ;
+    background-color: white;
+    border-color: rgba(11, 35, 38, 1);
+    color:  rgba(11, 35, 38, 1);
+}
+
+.shadow_btn{
+    border-width: 2px ;
+    background-color: white;
+    border-color: rgba(11, 35, 38, 0);
+    color:  rgba(11, 35, 38, 1);
+}
+
+.shadow_btn:hover{
+    border-width: 2px ;
+    background-color: white;
+    border-color: rgba(11, 35, 38, 1);
+    color:  rgba(11, 35, 38, 1);
+}
+
+.large_btn{
+    width: 120px;
+    height: 35px;
+}

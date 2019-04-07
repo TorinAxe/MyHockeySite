@@ -10,7 +10,13 @@ $( document ).ready(function() {
     $("#login_btn").click(
         function(){
             sendAjaxForm('module_window_info', 'login_form', 'check.php');
-            return false; 
+            return false;
+        }
+    );
+    $("#register_btn").click(
+        function(){
+            sendAjaxForm('module_window_info', 'register_form', 'save.php');
+            return false;
         }
     );
 });

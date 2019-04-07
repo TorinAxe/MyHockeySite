@@ -25,23 +25,22 @@ h1{
 
 }
 #regform{
+    padding: 10px 25px 10px 25px;
     display: none;
     text-align: center;
     margin:30%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgba(11, 35, 38, 1);
 }
-
-.accept{text-align: center;}
+.accept
+{
+    margin-top: 25px;
+    text-align: center;
+}
 #accept_btn{
-        margin: auto;
-    display: none;
-    padding: 5px 20px 5px 20px;
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
-    cursor: pointer;
-}
-.But{
     margin: auto;
+    display: none;
     padding: 5px 20px 5px 20px;
     color: #fff;
     background-color: #5cb85c;
