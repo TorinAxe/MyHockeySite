@@ -9,5 +9,6 @@ include "templates/middle.php";
 include "templates/content_begin.php";
 include "templates/content.php";
 include "templates/content_end.php";
+include "template/module.php"
 include "templates/footer.php";
 ?>
