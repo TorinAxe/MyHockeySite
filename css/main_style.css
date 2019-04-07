@@ -4,7 +4,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 }
 
 /*=========    Pages Components    =========*/
-#login_form{
+#login{
     padding: 10px;
 	border-radius: 2px;
 	background-color: #fff;
@@ -34,17 +34,19 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 /*========= Module Window Style =========*/
 
 #module_window{
+    padding: 10px;
     display: none;
     position: absolute;
     top:20%;
+    margin: auto;
     background-color: #fff;
 	border-color: rgba(11, 35, 38, 1);
 	color: #333;
 }
 
 #module_window_info{
-
+    display: block
 }
 #module_window_btn{
-    
+    display: block;
 }

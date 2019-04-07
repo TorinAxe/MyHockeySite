@@ -38,9 +38,7 @@ else {
         exit ("Извините, введённый вами логин или пароль не совпадает . Проверьте правильность введенных вами данных.");
     } else {
         $_SESSION['username'] = "$username";
-        $otkuda = $_SERVER['HTTP_REFERER'];
-        //echo $otkuda;
-        header("Location: $otkuda");
+        exit("Joined");
     }
 }
 ?>
