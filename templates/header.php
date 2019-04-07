@@ -19,6 +19,7 @@ include "as.php";
 </head>
 
 <body id="home">
+<?php include "templates/module.php"; ?>
 <div id="templatemo_wrapper">
     <div id="templatemo_header">
         <div id="site_title"><h1><a href="index.php?page=1"></a></h1></div>

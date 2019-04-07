@@ -58,21 +58,53 @@ body, p, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldse
 
 
 /*========= Module Window Style =========*/
+#module_wrapper{
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 35, 38, 0.5);
+}
 
 #module_window{
     padding: 10px;
+    width: 40%;
     display: none;
-    position: absolute;
+    position: relative;
     top:20%;
     margin: auto;
     background-color: #fff;
-	border-color: rgba(11, 35, 38, 1);
-	color: #333;
+    border: 2px, rgba(11, 35, 38, 1), solid;
+    border-radius: 5px; 
+    color: #333;
+    text-align: center;
+}
+
+#module_window h3{
+    text-align: center;
+}
+#module_window div{
+    min-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: #666;
+    border-bottom: #666;
 }
 
 #module_window_info{
-    display: block
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 #module_window_btn{
     display: block;
+    position: relative;
+    right: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
 }
