@@ -1,5 +1,3 @@
-        </div>
-
 
 <div class="footer"></br> Copyright © 2018 BPT | Designed by <b>Rubtsov Yuri </b></p></div>
 
