@@ -29,13 +29,7 @@ h1{
     text-align: center;
     margin:30%;
 }
-input {border: solid;
-    padding: 5px;
-    margin-bottom: 5px;
-    border-color: #bad8f7;
-    border-radius: 5px;
-    border-width: 2px;
-}
+
 .accept{text-align: center;}
 #accept_btn{
         margin: auto;
