@@ -36,7 +36,7 @@ else {
     $result = mysqli_query($db, "SELECT id FROM users_list WHERE nick_name ='$username'");
     $myrow = mysqli_fetch_array($result);
     if (!empty($myrow['id'])) {
-        exit ("Извините, введённый вами логин уже зарегистрирован. Введите другой логин.");
+        exit ("введённый вами логин уже зарегистрирован. Введите другой логин.");
     }
 
     // если такого нет, то сохраняем данные
