@@ -1,16 +1,42 @@
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+body, p, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	margin: 0;
 	padding: 0
 }
 
 /*=========    Pages Components    =========*/
 #login{
-    padding: 10px;
+    display: none;
+    padding: 23px;
+    position: absolute;
+    margin: auto;
+    border: 2px;
+    top: 50px;
+    right: 50px;
 	border-radius: 2px;
 	background-color: #fff;
 	border-color: rgba(11, 35, 38, 1);
 }
 
+#login .close {
+	position: absolute;
+	border: none;
+    color: #666;
+    font-size: 14px;
+	top : 3px;
+	right :3px;
+	background-color: rgba(255,255,255,0) !important;
+}
+#login .close:hover {
+	position: absolute;
+	cursor: pointer;
+	border: none;
+	color: #666;
+	top : 3px;
+	right :3px;
+	background-color: rgba(255,255,255,0) !important;
+}
+
+/*========= Captcha Style =========*/
 .captcha{
 	width: 120px;
 	height: 40px;
@@ -20,14 +46,14 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 
 /*========= Input Elements Styles =========*/
 .text_edit{
+    margin-bottom: 5px;
     padding-left: 15px;
 	padding-right: 15px;
 	width: 250px;
 	height: 35px;
-	border-radius: 5px  0px 0px 5px;
 	background-color: #fff;
 	border-color: rgba(11, 35, 38, 1);
-	color: #333;
+    color: #333;
 }
 
 
