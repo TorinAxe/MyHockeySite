@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     $("#module_window_btn").click(
         function(){
+            document.getElementById('module_wrapper').style.display = 'none';
             document.getElementById('module_window').style.display = 'none';
             document.getElementById('module_window_info').innerHTML = '';
         }
@@ -24,8 +25,9 @@ function sendAjaxForm(module_window, ajax_form, url) {
             //result = $.parseJSON(response);
             if (response != "Joined")
             {
+                document.getElementById('module_wrapper').style.display ='block';
                 document.getElementById('module_window').style.display = 'block';
-                document.getElementById('module_window_info').innerHTML = response; 
+                document.getElementById('module_window_info').innerHTML = ("Иосиф Виссарионович говорит, что " + response); 
                 return;
             } 
             window.location.reload();
