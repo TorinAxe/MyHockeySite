@@ -80,7 +80,7 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 
 #templatemo_main {
 	width: 960px;
-	background: url(../images/templatemo_main_middle.png) repeat-y
+	background: url(../images/templatemo_main_middle.png) repeat-y;
 }
 
 #sidebar {
@@ -95,10 +95,10 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	padding: 20px 0px 20px 0px;
 }
 
-#templatemo_footer {
+#templatemo_main_bottom {
 	width: 940px;
 	padding: 60px 10px 20px;
-	background: url(../images/templatemo_main_bottom.png) top no-repeat
+	background: url(../images/templatemo_main_bottom.png) top no-repeat;
 }
 
 #site_title { float: left; margin-top: 30px; }
