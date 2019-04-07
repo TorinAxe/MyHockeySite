@@ -1,10 +1,7 @@
 <?php
 session_start();
 header('Content-Type: text/html; charset=utf-8');
-if($_POST['capcha'] != $_SESSION['capcha'])
-    exit ("Текст с картинки введен не верно!");
-else {
-    if (isset($_POST['username'])) {
+if (isset($_POST['username'])) {
         $username = $_POST['username'];
         if ($username == '') {
             unset($username);
@@ -33,12 +30,11 @@ else {
     include "functions/mysql_func.php";// файл mysql_func.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь
 // проверка на существование пользователя
     $result = mysqli_query($db, "SELECT id FROM users_list WHERE nick_name = '$username' and password = '$password'");
-     $myrow = mysqli_fetch_array($result);
+    $myrow = mysqli_fetch_array($result);
     if (empty($myrow['id'])) {
-        exit ("Извините, введённый вами логин или пароль не совпадает . Проверьте правильность введенных вами данных.");
+        exit ("введённый вами логин или пароль не совпадает . Проверьте правильность введенных вами данных.");
     } else {
         $_SESSION['username'] = "$username";
         exit("Joined");
     }
-}
 ?>
