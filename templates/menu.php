@@ -14,7 +14,9 @@
         }
         else {
             include "templates/login_form.php";
-            echo '<button onclick="showLoginForm()">Войти</button>';
+            echo '<span></span>';
+            echo '<button class="shadow_btn" onclick="showLoginForm()">Войти</button>';
+
         }
     ?>
     </div>

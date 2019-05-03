@@ -5,10 +5,10 @@
         <input class="text_edit" id="username" name="username" type="text" value="" required placeholder="Имя пользователя"></br>
         <input class="text_edit" id="password" name="password" type="password" value="" required placeholder="Пароль"></br>
         <input type="button"     id="login_btn" class="btn lite_btn middle" value ="Войти"/>
-        <p>Еще не зарегистрированы?<a href="javascript:PopUpShow()">Регистрация</a>!</p>
+        <p>Не зарегистрированы?<a href="javascript:PopUpShow()">Регистрация</a></p>
     </form>
     <div id ="regform">
-        <br id="register_form" action="">
+        <form id="register_form" action="">
             <input class="text_edit" id="reg_username" name="username"  type="text" value="" placeholder="Имя пользователя" required ></br>
             <input class="text_edit" id="reg_password" name="password"  type="password" value="" placeholder="Пароль"  required title=""></br>
             <input class="text_edit" id="reg_reppassword" name="password"  type="password" value="" placeholder="Повторите пароль"  required title=""></br>
@@ -19,7 +19,7 @@
             </div>
             <input class="text_edit" name="capcha"  placeholder="Введите текст с картинки"/></br>
             <input type="button"     id="register_btn" class="btn lite_btn middle" value ="Регистрация"/></br>
-            <p>Уже зарегистрированы? <a href="javascript:PopUpHide()">Введите имя пoльзователя</a>!</p>
+            <p>Уже зарегистрированы? <a href="javascript:PopUpHide()">Войдите</a></p>
         </form>
     </div>
 </div>
