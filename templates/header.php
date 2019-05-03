@@ -9,6 +9,7 @@
     <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
     <link href="css/ddsmoothmenu.css" rel="stylesheet" type="text/css"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Ruslan+Display" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/dynamicsite.js"></script>
 
@@ -17,24 +18,4 @@
 <body id="home">
 <?php include "templates/module.php"; ?>
 <div id="templatemo_wrapper">
-    <div id="templatemo_header">
-        <div id="site_title"><h1><a href="index.php?page=1"></a></h1></div>
-        <div id="header_right">
-            <ul>
-                <li>
-                </li>
-                <?php
-                if(isset($_SESSION['username'])){
-                    echo '
-                    Добро пожаловать, '.$_SESSION['username']."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href=\"shoppingcart.php\"><b>Ваша корзина</b><img src='./images/cart.png'/></a>";
-                    echo '<input class="exit_btn middle " style="margin-left: 35px" type="submit" value="Выйти" onclick="location.href=\'exit.php\'">';
-
-                }
-                else {
-                    include "templates/login_form.php";
-                   echo '<button class="btn default_btn middle" type="button" onclick="showLoginForm()">Войти</button>';
-                }
-                ?>
-            </ul>
-        </div>
-    </div> <!-- END of header -->
+ <!-- END of header -->

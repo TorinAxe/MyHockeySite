@@ -1,5 +1,6 @@
 .ddsmoothmenu{
-	margin-bottom:10px;
+	margin-bottom:5px;
+	padding-left: 15px;
 }
 
 .ddsmoothmenu ul{
@@ -16,10 +17,17 @@
 	float: left;
 }
 
+.ddsmoothmenu ul .divider{
+	width: 3px;
+	height: 35px;
+	background-image: url("./images/divider2.png");
+}
+
 /*Top level menu link items style*/
 .ddsmoothmenu ul li a {
+	 font-family: 'Kelly Slab', cursive;
 	 display: block;
-	 padding: 0 30px;
+	 padding: 0 15px;
 	 height: 45px;
 	 line-height: 45px;
 	 cursor: pointer;
@@ -32,8 +40,9 @@
  }
 
 .ddsmoothmenu ul li a:hover {
+	font-family: 'Kelly Slab', cursive;
 	display: block;
-	padding: 0 30px;
+	padding: 0 15px;
 	height: 45px;
 	line-height: 45px;
 	cursor: pointer;

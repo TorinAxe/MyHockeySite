@@ -42,15 +42,6 @@
 	padding-right: 35px ;
 }
 
-.exit_btn{
-	font-size: 13px;
-	font-weight: 900;
-	color: #666;;
-	text-decoration: underline;
-	cursor: pointer;
-	border: none;
-	background-color: rgba(0, 0, 0, 0);
-}
 .search_dimon_with_utochka{
 	display: inline;
 	margin-right: 15px;
@@ -141,3 +132,44 @@
 	background-color: rgba(11, 35, 38, 1);
 }
 
+.user_control{
+	display: block;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.user_control span{
+	padding: 15px;
+	font-family: 'Kelly Slab', cursive;
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	color:  rgba(11, 35, 38, 1);
+	text-decoration: none;
+	font-weight: 700;
+	text-align: center;
+}
+
+.user_control a{
+	margin: 0 15px;
+	font-family: 'Kelly Slab', cursive;
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	color:  rgba(11, 35, 38, 1);
+	text-decoration: none;
+	font-weight: 700;
+	text-align: center;
+}
+
+.user_control button{
+	margin: 0 15px;
+	font-family: 'Kelly Slab', cursive;
+	cursor: pointer;
+	font-size: 16px;
+	color:  rgba(11, 35, 38, 1);
+	text-decoration: none;
+	font-weight: 700;
+	outline: none;
+	text-align: center;
+}
