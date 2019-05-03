@@ -1,5 +1,5 @@
 <script src =".//js/main.js"></script>
-<div id="login">
+<div id="login" class ="selection_false">
     <button class="close" onclick="closeLoginForm()">&#10006;</button>
     <form id="login_form">
         <input class="text_edit" id="username" name="username" type="text" value="" required placeholder="Имя пользователя"></br>
@@ -15,10 +15,10 @@
             <!--<input class="text_edit" type="email" name="email" placeholder="Введите свою почту"></br>-->
             <div>
                 <img  id ="captcha" src = "captcha.php"/>
-                <span style="vertical-align:12px; font-size: 1.2em;" onclick="document.getElementById('captcha').src = 'captcha.php?' + Math.random()">&#8635;Обновить</span>
+                <span style="vertical-align:12px; font-size: 1.2em; cursor:pointer;" onclick="document.getElementById('captcha').src = 'captcha.php?' + Math.random()">&#8635;Обновить</span>
             </div>
             <input class="text_edit" name="capcha"  placeholder="Введите текст с картинки"/></br>
-            <input type="button"     id="register_btn" class="btn lite_btn middle" value ="Регистрация"/></br>
+            <input type="button"     id="register_btn" class="btn lite_btn middle large_btn" value ="Регистрация"/></br>
             <p>Уже зарегистрированы? <a href="javascript:PopUpHide()">Войдите</a></p>
         </form>
     </div>

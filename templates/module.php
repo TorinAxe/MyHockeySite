@@ -1,4 +1,4 @@
-<div id="module_wrapper">
+<div id="module_wrapper" class ="selection_false">
     <div id="module_window">
         <h3><b>Товарищ, тут тебе сообщение от Вождя Народов!</b></h3>
         <hr>
