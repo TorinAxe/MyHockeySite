@@ -131,6 +131,7 @@
 	background-color: rgba(11, 35, 38, 1);
 }
 
+
 .user_control{
 	display: block;
 	text-align: right;
@@ -178,3 +179,9 @@
 	text-align: center;
 }
 
+.selection_false{
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
