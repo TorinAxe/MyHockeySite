@@ -6,7 +6,7 @@ body, p, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldse
 /*=========    Pages Components    =========*/
 #login{
     display: none;
-    padding: 23px;
+    padding: 23px 23px 0 23px;
     position: absolute;
     margin: auto;
     border: 2px;
@@ -18,7 +18,8 @@ body, p, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldse
 }
 
 #login .close {
-	position: absolute;
+    position: absolute;
+    margin-right: -2px;
 	border: none;
     color: #666;
     font-size: 14px;
