@@ -16,8 +16,7 @@ if ($action == 'show') {
         exit;
     }
 }
-
-    echo ' <link href="css/items.css" media="screen" rel="stylesheet">
+echo ' <link href="css/items.css" media="screen" rel="stylesheet">
         <table class="super_table" width="700px" cellpadding="5px"  >
             <thead>
                 <tr>

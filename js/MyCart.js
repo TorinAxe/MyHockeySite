@@ -41,7 +41,7 @@ function delFromCart(id){
         data: 'action=del&id=' + id,
         dataType:"text",
         error: function () {
-            alert( "Произошла ошибка при добавлении товара" );
+            alert( "Произошла ошибка при удаление товара" );
         },
         success: function (response) {
             showMyCart();
