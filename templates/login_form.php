@@ -18,7 +18,7 @@
                 <span style="vertical-align:12px; font-size: 1.2em; cursor:pointer;" onclick="document.getElementById('captcha').src = 'captcha.php?' + Math.random()">&#8635;Обновить</span>
             </div>
             <input class="text_edit" name="capcha"  placeholder="Введите текст с картинки"/></br>
-            <input type="button"     id="register_btn" class="btn lite_btn middle" value ="Регистрация"/></br>
+            <input type="button"     id="register_btn" class="btn lite_btn middle large_btn" value ="Регистрация"/></br>
             <p>Уже зарегистрированы? <a href="javascript:PopUpHide()">Введите имя пoльзователя</a>!</p>
         </form>
     </div>
