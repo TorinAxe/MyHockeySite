@@ -3,7 +3,6 @@ session_start();
 header('Content-Type: text/html; charset=utf-8');
 include_once "functions/mysql_func.php";
 include "templates/header.php";
-include "templates/menu.php";
 include "templates/content_begin.php";
 $items_count = mysqli_fetch_array(mysqli_query($db, "SELECT COUNT(*) FROM items_list"));
 $id = rand(1,$items_count[0]);

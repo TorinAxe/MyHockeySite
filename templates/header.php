@@ -6,16 +6,17 @@
     <meta name="keywords" content="web store, free templates, website templates, CSS, HTML" />
     <meta name="description" content="Web Store Theme - free CSS template provided by templatemo.com" />
     <link href="css/main_style.css" rel="stylesheet" type="text/css" />
+    <link href="css/animations.css" rel="stylesheet" type="text/css" />
     <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
     <link href="css/ddsmoothmenu.css" rel="stylesheet" type="text/css"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Ruslan+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Kelly+Slab|Ruslan+Display" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/dynamicsite.js"></script>
 
 </head>
 
-<body id="home">
+<body id="home" class="flex_container">
 <?php include "templates/module.php"; ?>
 
 <div id="header_wrapper">
@@ -44,4 +45,3 @@
         <br style="clear: left" />
     </div>
 </div>
-<div id="templatemo_wrapper">

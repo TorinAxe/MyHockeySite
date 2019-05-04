@@ -16,7 +16,7 @@
 	background-color: #666;
 }
 .plr{
-	padding: 0px 10px 0px 10px;
+	padding: 0px 30px 0px 10px;
 }
 
 .super_table{
@@ -121,20 +121,9 @@
 	text-align: right;
 }
 
-.footer{
-	display: block;
-	position: relative;
-	bottom: 0px;
-	height: 40px;
-	width: 100%;
-	color: white;
-	background-color: rgba(11, 35, 38, 1);
-}
-
 .user_control{
 	display: block;
 	text-align: right;
-	padding-right: 15px;
 	height: 45px;
 }
 

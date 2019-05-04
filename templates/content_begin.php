@@ -1,6 +1,5 @@
-<div id="templatemo_main_top"></div>
-<div id="templatemo_main">
-    <?php
-    include "sidebar.php";
-    ?>
-    <div id="content">
+<div id="templatemo_wrapper">
+    <div id="templatemo_main_top"></div>
+        <div id="templatemo_main">
+            <?php include "sidebar.php";?>
+            <div id="content">

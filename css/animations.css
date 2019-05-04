@@ -1,0 +1,14 @@
+.blink_animation { 
+  border:2px solid white;
+  animation: move-shadow 3s infinite;
+}
+@keyframes move-shadow {
+  0%{
+    border-radius: 0% 0%;
+    border:2px solid white;
+  }
+  50%{
+    border-radius: 50% 50%;
+    border:2px solid yellow;
+  } 
+}
