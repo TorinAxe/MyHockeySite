@@ -167,3 +167,9 @@
 	text-align: center;
 }
 
+.selection_false{
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
