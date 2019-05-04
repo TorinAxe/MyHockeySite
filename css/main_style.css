@@ -3,6 +3,76 @@ body, p, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldse
 	padding: 0
 }
 
+
+/*=========    Header Block Style    ============*/
+
+#header_wrapper {
+    background-image: url(../images/header_background.png);
+    width: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+/*=========    Content Block Style    ============*/
+
+#templatemo_main_top {
+	margin-top: 25px;
+	width: 960px;
+	height: 12px;
+	background: url(../images/templatemo_main_top.png) no-repeat top
+}
+
+#templatemo_main {
+	width: 960px;
+	background: url(../images/templatemo_main_middle.png) repeat-y;
+}
+
+#sidebar {
+	float: left; 
+	width: 200px;
+	padding: 20px 30px 0 10px;
+}
+
+#content {
+	float: right;
+	width: 720px;
+	padding: 20px 0px 20px 0px;
+}
+
+#templatemo_main_bottom {
+	width: 940px;
+	padding: 60px 10px 20px;
+	background: url(../images/templatemo_main_bottom.png) top no-repeat;
+}
+
+/*=========    Footer Style    ============*/
+
+#footer_wrapper{
+    background-image: url(../images/footer_background.png);
+    width: 100%;
+	padding: 0 10px;
+    margin: 0 auto;
+}
+
+#footer_content{
+    width: 960px;
+	height: 45px;
+	padding: 0 10px;
+	background-color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#footer_content p {
+    font-family: 'Kelly Slab', cursive;
+    color:  rgba(11, 35, 38, 1);
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    outline: none;
+}
+
 /*=========    Pages Components    =========*/
 #login{
     display: none;
@@ -157,4 +227,20 @@ body, p, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldse
 .large_btn{
     width: 120px;
     height: 35px;
+}
+
+.footer_menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer_menu li {
+	margin: 0;
+	padding: 2px 0 3px 0px;
+	border-bottom: 1px dotted #ccc
+}
+
+.footer_menu li a {
+	font-size: 11px;
 }
