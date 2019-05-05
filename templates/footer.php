@@ -1,6 +1,8 @@
-
-<div class="footer"></br> Copyright © 2018 BPT | Designed by <b>Rubtsov Yuri </b></p></div>
-
+<div id="footer_wrapper">
+    <div id="footer_content">
+        <p> Copyright © 2018 BPT | Designed by <b>Rubtsov Yuri </b></p>
+    </div>
+</div>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/ddsmoothmenu.js"></script>

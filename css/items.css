@@ -11,7 +11,7 @@
     color: #474747;
     z-index: 0;
     height: auto;
-    max-width : 200px;
+    max-width : 190px;
     position: inherit;
 }
 .item_img{
@@ -82,12 +82,4 @@
 
 .disable{
     pointer-events: none;
-}
-
-.enable{
-
-}
-
-.current{
-
 }

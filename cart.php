@@ -52,7 +52,7 @@ echo ' <link href="css/items.css" media="screen" rel="stylesheet">
             </table>
             <br>
             <br>
-            <p style="color:#FFFFFF;" class="final_sum">Игого:'.$sum.' &#8381;</p>
+            <p class="final_sum rus_style">Игого:'.$sum.' &#8381;</p>
 ';
 
 ############################

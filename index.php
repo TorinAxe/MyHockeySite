@@ -4,7 +4,6 @@ header('Content-Type: text/html; charset=utf-8');
 
 include_once "functions/mysql_func.php";
 include "templates/header.php";
-include "templates/menu.php";
 include "templates/middle.php";
 include "templates/content_begin.php";
 include "templates/content.php";
