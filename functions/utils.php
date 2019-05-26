@@ -6,4 +6,8 @@ function sanitizeString($var)
     $var = stripslashes($var);
     return $var;
 }
+function addHorizontal()
+{
+    echo '<br><hr><br>';
+}
 ?>

@@ -1,9 +1,9 @@
 <?php
 echo '
 <div class="block_inline right_align">
-    <form class="search_dimon_with_utochka"action="./search.php" method="post">
-        <input id="search_edit" type="text" name ="searchText" required placeholder="Что искать">
-        <button class="default_btn"type="submit" name = "submit">Поиск</button>
+    <form class="search_dimon_with_utochka"action="index.php" method="get">
+        <input id="search_edit" type="text" name ="searchText"  placeholder="Что искать">
+        <button class="default_btn"type="submit" name = "search" value="true">Поиск</button>
         <div class="line">
             <input id="filter" type="checkbox" onclick="specify_filter_handler()"> <p>Фильтр</p>
         </div>

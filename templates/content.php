@@ -1,28 +1,39 @@
 <link href="css/items.css" media="screen" rel="stylesheet">
 <?php
 include "searchfield.php";
-include "server/SiteCatalog.php";
+include "server/CatalogPage.php";
 include "server/Navigator.php";
+include "server/SearcRequest.php";
+include "server/SearchMachine.php";
 
 function whatPage()
 {
-    if ($_GET["page"] != null) {
+    if ($_GET["page"] != null)
+    {
         return $_GET['page'];
-    } else
+    }
+    else
     {
         return 1;
     }
 }
 
 $itemsOnPage = 15;
+$page_number = 0;
+$total_pages = 0;
+
 $page_number = whatPage();
-$catalog = new SiteCatalog($db, isUser());
+$request = new SearcRequest($_GET["searchText"],
+                            $_GET["max_coast"],
+                            $_GET["catalog"],
+                            $_GET["category_id"]);
 
-    $total_pages = $catalog->getPagesCount($itemsOnPage);
-    $catalogPage = $catalog->getPage($page, $itemsOnPage);
-    $catalogPage->show();
-    $navigator = new Navigator($total_pages);
-    $navigator->show($page);
+$search = new SearchMachine($db, isUser());
+$total_pages = $search->getPagesCount($itemsOnPage, $request);
+$searchPage = $search->getPage($page_number, $itemsOnPage, $request);
+$searchPage->show();
 
-
+echo '<br><hr><br>';
+$navigator = new Navigator($total_pages);
+$navigator->show($page_number);
 ?>

@@ -32,8 +32,13 @@ class CatalogPage
             for ($colomn = 0; $colomn < $itemsInRow; $colomn++)
             {
                 $itemNumber = $itemsInRow * $row + $colomn;
-                $this->printItem($this->pageItems[$itemNumber]);
-                $item++;
+                if ($this->pageItems[$itemNumber]) {
+                    $this->printItem($this->pageItems[$itemNumber]);
+                    $item++;
+                }
+                else{
+                    break;
+                }
             }
             echo '</div>';
         }

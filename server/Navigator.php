@@ -8,25 +8,45 @@
 
 class Navigator
 {
+    private $totalPages;
+    private $maxDisplayedPages = 5;
+    function  __construct($totalPages)
+    {
+        $this->totalPages = $totalPages;
+    }
+
+    private function addPreviousPageButton($previousPageNumber, $disable)
+    {
+        if ($disable)
+            echo '<a href="#" class="paging_left_term paging_block disable"></a>';
+        else
+            echo '<a href="index.php?page='.$previousPageNumber.'" class="paging_left_term paging_block enable"></a>';
+    }
+
+    private function addNextPageButton($nextPageNumber, $disable)
+    {
+        if ($disable)
+            echo '<a href="#" class="paging_right_term paging_block disable"></a>';
+        else
+            echo '<a href="index.php?page='.$nextPageNumber.'" class="paging_right_term paging_block enable"></a>';
+    }
+
+    private function addLinkPage($pageNumber, $current){
+        echo '<a href="index.php?page='.$pageNumber .'" class="paging_block">'.$pageNumber.'</a>';
+    }
 
     public function show($page)
     {
         $prev_page = $page - 1;
         $next_page = $page + 1;
-        echo '<br><hr><br>
-        <div style="text-align: center">
-        <div class="paging">';
-        if ($prev_page == 0) {
-            echo '<a href="#" class="paging_left_term paging_block disable"></a>';
-        } else echo '<a href="index.php?page=' . $prev_page . '" class="paging_left_term paging_block enable"></a>';
 
-        echo '<a href="index.php?page=' . $_GET['page'] . '" class="paging_block">' . $_GET['page'] . '</a>';
+        echo '<div style="text-align: center"><div class="paging">';
 
-        if ($next_page == 0) {
-            echo '<a href="#" class="paging_right_term paging_block disable"></a>';
-        } else echo '<a href="index.php?page=' . $next_page . '" class="paging_right_term paging_block enable"></a>';
-        echo '</div>
-        </div>';
+        $this->addPreviousPageButton($prev_page,$prev_page == 0);
+        $this->addLinkPage($page, true);
+        $this->addNextPageButton($next_page, $page == $this->totalPages);
+
+        echo '</div></div>';
     }
 
 }
