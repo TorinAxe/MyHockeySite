@@ -24,7 +24,7 @@ include "templates/content_begin.php";
                     <div class="cleaner h10"></div>
 
                     <input type="reset" value="Очистить" id="reset" name="reset" class="submit_btn float_l" />
-                    <input type="sumbit" value="Отправить" id="submit" name="submit" class="submit_btn float_r" />
+                    <input type="submit" value="Отправить" id="submit" name="submit" class="submit_btn float_r" />
 
                 </form>
             </div>

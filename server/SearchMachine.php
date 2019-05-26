@@ -30,17 +30,18 @@ class SearchMachine
 
         $sql = mysqli_query($this->db, $request->getRequest());
 
-        $item = 0;
+        $currentItem = 0;
         while ($result = mysqli_fetch_array($sql)) {
-            if ($item < $first_item)
+            if ($currentItem < $first_item)
             {
+                $currentItem++;
                 continue;
             }
             else{
-                if ($item < $itemsOnPage)
+                if ($currentItem - $first_item < $itemsOnPage)
                 {
                     $this->page->addItem($result);
-                    $item++;
+                    $currentItem++;
                 }
                 else break;
             }

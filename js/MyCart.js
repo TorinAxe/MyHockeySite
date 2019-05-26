@@ -9,8 +9,8 @@ function addToCart(id){
         error: function () {
             alert( "Не смог" );
         },
-        success: function (response) {
-            alert('Добавили ' + id);
+        success: function () {
+            showMessage("Товар добавлен");
         }
     });
 }

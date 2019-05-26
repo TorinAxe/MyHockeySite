@@ -46,7 +46,7 @@ class CatalogPage
 
     private function printItem($item)
     {
-        if (isset($user)){
+        if (isset($_SESSION['username'])){
             echo '
                 <div class="catalog_item">
                     <div class="item_img" >
@@ -54,7 +54,7 @@ class CatalogPage
                     </div>    
                     <div class="item_text" id = "myUL">
                         <h3>' . $item['name'] . '</h3>
-                            <button class="btn large_btn shadow_btn" type=button onClick="addToCart(' . $item["id"] . ')">
+                            <button class="btn large_btn shadow_btn addToCart" type=button onClick="addToCart(' . $item["id"] . ')">
                             <img width="16px" src=\'./images/cart.png\'/>
                             <b style="font-size:18px ">&nbsp;' . $item['cost'] . '&#8381;</b>
                         </button>

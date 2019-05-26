@@ -12,7 +12,7 @@ echo '
                 $category_list = mysqli_query($db,"Select * From items_category");
                 while ($row = hasNext($category_list))
                 {
-                    echo '<div class="line"><input type="checkbox" id="category_'.$row['id'].'"><p>'.$row['name'].'</p></div>';
+                    echo '<div class="line"><input type="checkbox" id="category_'.$row['id'].'" checked><p>'.$row['name'].'</p></div>';
                 }
                 echo'
             </div>
