@@ -3,7 +3,6 @@ session_start();
 header('Content-Type: text/html; charset=utf-8');
 include_once "functions/mysql_func.php";
 include "templates/header.php";
-include "templates/menu.php";
 include "templates/middle.php";
 include "templates/content_begin.php";
 ?>
@@ -34,13 +33,7 @@ if ($i_max >= $items_count){$next_page = 0;}
 
 $i = 0;
 $line_closed = true;
-echo '<div class="block_inline right_align">
-            <form class="search_dimon_with_utochka" action="./search.php" method="post">
-                <input type="text" name ="searchText" required placeholder="Что искать">
-                <button class="default_btn" type="submit" name = "submit">Поиск</button>
-            </form>
-            <button class="btn default_btn" type="submit"  class="btn-std" onclick="location.href=\'index.php\'"> Очистить</button>
-      </div>';
+include "templates/searchfield.php";
 while ($result = mysqli_fetch_array($query)) {
     if($i == $i_max) break;
     if($i < $i_min) { ++$i; continue;};

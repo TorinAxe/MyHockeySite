@@ -17,18 +17,19 @@ if ($action == 'show') {
     }
 }
 echo ' <link href="css/items.css" media="screen" rel="stylesheet">
-        <table class="super_table" width="700px" cellpadding="5px"  >
+       <table class="super_table" width="700px" cellpadding="5px">
             <thead>
                 <tr>
                     <th width="90" >Изображение</th>
                     <th width="110">Назание</th>
                     <th width="90" >Количество</th>
                     <th width="90" >Цена</th>
+                    <th width="90"> Полная</th>
 					<th width="90" ></th>
                 </tr>
             </thead><tbody>
     ';
-	$kol = 1;
+$kol = 1;
     $sum = 0;
     for ($i = 0; $i < count($cart); $i++){
         $idProduct = $cart[$i]["idProduct"];
@@ -39,8 +40,9 @@ echo ' <link href="css/items.css" media="screen" rel="stylesheet">
 
             echo '  <td class="item_img" xmlns="http://www.w3.org/1999/html"><a href="productdetail.php?item_id=' .$row['id'].'"><img src="'.$row["image"].'" class="item_img" alt=""></a></td>
 					<td class="item_text">'.$row["name"].'</td>
-					<td align ="center"><input id ="kol'.$row['id'].'" type ="number" autocomplete ="on" min="1" max="'.$row["quantity"].'" value="1" ></td>
-                    <td class="product_price" align = "center ">'.$row["cost"].' &#8381;</td>
+					<td align ="center"><input id ="kol' .$row['id'].'"  type ="number"  autocomplete ="on" min="1" max="'.$row["quantity"].'" value="1"></td>
+                    <td class="product_price" id="price" align = "center ">'.$row["cost"].' &#8381;</td>
+                    <td id="totalPrice" class="totalSum"></td>
 					<td align ="center"> <button class="btn large_btn shadow_btn" type=button  onClick="delFromCart('.$row["id"].')">Удалить</button></td>
                 <tr></tr>
            ';
@@ -52,7 +54,8 @@ echo ' <link href="css/items.css" media="screen" rel="stylesheet">
             </table>
             <br>
             <br>
-            <p class="final_sum rus_style">Игого:'.$sum.' &#8381;</p>
+            <p class="final_sum rus_style" id="total">Игого:'.$sum.' &#8381;</p>
+            <a href="order.php"class="final_sum rus_style">Перейти к оплате</a>
 ';
 
 ############################

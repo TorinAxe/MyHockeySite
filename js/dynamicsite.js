@@ -20,6 +20,13 @@ $( document ).ready(function() {
             return false;
         }
     );
+    $("#pass_btn").click(
+        function(){
+            if (!passwordCorrect()) return false;
+            sendAjaxForm('module_window_info', 'pas_form', 'formPass.php');
+            return false;
+        }
+    );
 });
 
 function sendAjaxForm(module_window, ajax_form, url) {
@@ -65,4 +72,24 @@ function passwordCorrect(){
     }
 
     return true;
+}
+
+function specify_filter_handler() {
+   var filter = document.getElementById("filter");
+   if (filter.checked){
+       document.getElementById("filter_option").style.display = "block";
+   }
+   else{
+       document.getElementById("filter_option").style.display = "none";
+   }
+}
+
+function range_handler(range)
+{
+    var value = range.value;
+    var percentage = value / range.max * 100;
+    range.style.background = ("-webkit-linear-gradient(left ,orangered 0%, orangered " + percentage + "%,#fff "  + percentage + "%, #fff 100%)");
+    var value_shower = document.getElementById("filter_option_cost");
+    value_shower.innerHTML = value;
+    
 }
