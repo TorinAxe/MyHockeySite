@@ -43,7 +43,7 @@ else {
     $result2 = mysqli_query($db, "INSERT INTO users_list (nick_name,password) VALUES('$username','$password')");
     // Проверяем, есть ли ошибки
     if ($result2 == 'TRUE') {
-        echo "Вы успешно зарегистрированы! Теперь вы можете зайти на сайт. <a href='index.php'>Главная страница</a>";
+        echo "Вы успешно зарегистрированы! Теперь вы можете зайти на сайт. <a href='../index.php'>Главная страница</a>";
     } else {
         echo "Ошибка! Вы не зарегистрированы.";
     }

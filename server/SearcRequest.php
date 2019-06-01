@@ -17,18 +17,26 @@ class SearcRequest
     {
         $this->searchText = trim(strip_tags($searchText));
         $this->maximumCoast = trim(strip_tags($maximumCoast));
-        $this->catalogs = trim(strip_tags($catalogs));
+        $this->catalogs = $catalogs;
         $this->category_id = trim(strip_tags($category_id));
     }
 
     public function getCountRequest()
     {
-        return "SELECT COUNT(*) FROM items_list";
+        return $this->getTemplateRequest("COUNT(*)");
     }
 
     public function getRequest()
     {
-        if ($this->searchText){
+        return $this->getTemplateRequest("`id`, `name`, `cost` , `image`");
+    }
+
+    private function getTemplateRequest($wtf)
+    {
+        if (!empty($this->searchText) OR !empty($this->maximumCoast) OR !empty($this->catalogs))
+        {
+            $query_catalog = "";
+            $query_max_cost = "";
             $search =  explode(" ",$this->searchText);
             $count = count($search);
             $array = array();
@@ -40,14 +48,18 @@ class SearcRequest
                 else
                     $array[] = "CONCAT (`name`, `cost`) LIKE '%".$key."%'";
             }
-            return "Select * From `items_list`  where ".implode("", $array);
-        }
-        else if ($this->category_id){
-            return "SELECT `id`, `name`, `cost` , `image` from items_list WHERE id_items_category = $this->category_id  ORDER  BY cost DESC ";
-        }
-        else{
-           return "SELECT `id`, `name`, `cost` , `image` from items_list ORDER  BY cost DESC ";
-        }
+            if (!empty($this->maximumCoast)) $query_max_cost = "AND cost <= $this->maximumCoast";
+            if (!empty($this->catalogs)) $query_catalog = "AND id_items_category IN ($this->catalogs)";
 
+            return "Select $wtf From `items_list`  where ".implode("", $array)." $query_catalog $query_max_cost ORDER  BY cost DESC";
+        }
+        else if (!empty($this->category_id))
+        {
+            return "SELECT $wtf from items_list WHERE id_items_category = $this->category_id  ORDER  BY cost DESC ";
+        }
+        else
+        {
+            return "SELECT $wtf from items_list ORDER  BY cost DESC ";
+        }
     }
 }

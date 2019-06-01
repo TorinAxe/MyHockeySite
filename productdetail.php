@@ -1,7 +1,7 @@
 <?php
 session_start();
 header('Content-Type: text/html; charset=utf-8');
-include_once "functions/mysql_func.php";
+include_once "server/mysql_func.php";
 include "templates/header.php";
 include "templates/content_begin.php";
 $items_count = mysqli_fetch_array(mysqli_query($db, "SELECT COUNT(*) FROM items_list"));
@@ -29,10 +29,11 @@ if(isset($_SESSION['username'])) {
                 <td>' . $result['quantity'] . '</td>
             </tr>
             <tr>
-                <td><button class="btn large_btn shadow_btn" type=button onClick="addToCart('.$result["id"].')">
-				    <img width="16px" src=\'./images/cart.png\'/>
-				    <b style="font-size:18px ">&nbsp;'.$result['cost'].'&#8381;</b>
-				</button></td>
+                <td> <button class="btn large_btn shadow_btn addToCart" type=button onClick="addToCart(' . $result["id"] . ')">
+                            <img width="16px" src=\'./images/cart.png\'/>
+                            <b style="font-size:18px ">&nbsp;' . $result['cost'] . '&#8381;</b>
+                     </button>
+                </td>
             </tr>
         </table>
     </div>
@@ -96,7 +97,6 @@ echo '<div class="cleaner h50"></div>
                 </div>
          </div>
      </div>
-     <a href="index.php?page=1" class="more float_r">Еще</a>
 
     <div class="cleaner"></div>
     </div>';

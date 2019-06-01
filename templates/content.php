@@ -23,17 +23,32 @@ $page_number = 0;
 $total_pages = 0;
 
 $page_number = whatPage();
-$request = new SearcRequest($_GET["searchText"],
-                            $_GET["max_coast"],
-                            $_GET["catalog"],
-                            $_GET["category_id"]);
+
+$searchText = $_GET["searchText"];
+$maximumCoast = $_GET["maximumCoast"];
+$catalogs = (!empty( $_GET["catalogs"])) ? implode(',', $_GET["catalogs"]) : array();
+$category_id = $_GET["category_id"];
+
+$request = new SearcRequest($searchText, $maximumCoast, $catalogs, $category_id);
 
 $search = new SearchMachine($db, isUser());
 $total_pages = $search->getPagesCount($itemsOnPage, $request);
 $searchPage = $search->getPage($page_number, $itemsOnPage, $request);
 $searchPage->show();
 
-echo '<br><hr><br>';
-$navigator = new Navigator($total_pages);
-$navigator->show($page_number);
+if ($total_pages == 0)
+{
+    echo "Шел бы ты с такими то запросами!";
+    echo '<br><hr><br>';
+}
+else if ($total_pages > 1)
+{
+    echo '<br><hr><br>';
+    $navigator = new Navigator($total_pages);
+    $navigator->show($page_number);
+}
+else
+{
+    echo '<br><hr><br>';
+}
 ?>

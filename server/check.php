@@ -27,7 +27,7 @@ if (isset($_POST['username'])) {
     $username = trim($username);
     $password = trim($password);
 // подключаемся к базе
-    include "functions/mysql_func.php";// файл mysql_func.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь
+    include "mysql_func.php";// файл mysql_func.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь
 // проверка на существование пользователя
     $result = mysqli_query($db, "SELECT id FROM users_list WHERE nick_name = '$username' and password = '$password'");
     $myrow = mysqli_fetch_array($result);

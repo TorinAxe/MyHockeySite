@@ -4,7 +4,7 @@ $letters = 'ABCDEFGKIJKLMNOPQRSTUVWXYZ1234567890'; // алфавит
 
 $caplen = 6; //длина текста
 $width = 120; $height = 40; //ширина и высота картинки
-$font = 'comic.ttf';//шрифт текста
+$font = '../comic.ttf';//шрифт текста
 $fontsize = 14;// размер текста
 
 header('Content-type: image/png'); //тип возвращаемого содержимого (картинка в формате PNG)

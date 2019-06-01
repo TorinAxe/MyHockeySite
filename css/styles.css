@@ -78,7 +78,7 @@
 .range{
 	min-width: 250px;
 	max-width: 250px;
-	background:-webkit-linear-gradient(left ,orangered 0%, orangered 50%,#fff 50%, #fff 100%);
+	background:-webkit-linear-gradient(left ,orangered 0%, orangered 100%,#fff 50%, #fff 100%);
 	-webkit-appearance: none;
 	border-radius:4px;
 	height:10px;
@@ -242,4 +242,17 @@
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
+}
+
+
+#back-top{
+	background: url("../images/up1.png") no-repeat top left;
+	height: 60px;
+	width: 60px;
+	bottom: 10%;
+	right: 10%;
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	z-index: 999;
 }

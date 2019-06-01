@@ -54,7 +54,7 @@ class CatalogPage
                     </div>    
                     <div class="item_text" id = "myUL">
                         <h3>' . $item['name'] . '</h3>
-                            <button class="btn large_btn shadow_btn addToCart" type=button onClick="addToCart(' . $item["id"] . ')">
+                            <button id="addToCartBtn" class="btn large_btn shadow_btn addToCart" type=button onClick="addToCart(' . $item["id"] . ')">
                             <img width="16px" src=\'./images/cart.png\'/>
                             <b style="font-size:18px ">&nbsp;' . $item['cost'] . '&#8381;</b>
                         </button>
