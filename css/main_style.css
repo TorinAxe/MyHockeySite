@@ -318,3 +318,32 @@ body, p, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldse
 .text_size_14{
     font-size: 14px;
 }
+
+/*============== Scroll bar ===============*/
+#back-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding:0;
+    margin:0;
+    display: none;
+    z-index: 999;
+    background: orangered;
+}
+#back-top a {
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-image: url(http://dwweb.ru/__DATA/images/back-top.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index:999;
+    opacity:0.5;
+}
+#back-top a:hover {
+    background-image: url(http://dwweb.ru/__DATA/images/back-top.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity:1;
+}

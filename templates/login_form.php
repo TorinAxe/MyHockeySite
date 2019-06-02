@@ -14,8 +14,8 @@
             <input class="text_edit" id="reg_reppassword" name="password"  type="password" value="" placeholder="Повторите пароль"  required title=""></br>
             <!--<input class="text_edit" type="email" name="email" placeholder="Введите свою почту"></br>-->
             <div>
-                <img  id ="captcha" src = "captcha.php"/>
-                <span style="vertical-align:12px; font-size: 1.2em; cursor:pointer;" onclick="document.getElementById('captcha').src = 'captcha.php?' + Math.random()">&#8635;Обновить</span>
+                <img  id ="captcha" src = "server/captcha.php"/>
+                <span style="vertical-align:12px; font-size: 1.2em; cursor:pointer;" onclick="document.getElementById('captcha').src = 'server/captcha.php?' + Math.random()">&#8635;Обновить</span>
             </div>
             <input class="text_edit" name="capcha"  placeholder="Введите текст с картинки"/></br>
             <input type="button"     id="register_btn" class="btn lite_btn middle large_btn" value ="Регистрация"/></br>
@@ -44,5 +44,5 @@
 <script>
     $(document).ready(function(){
 
-    }
+    });
 </script>

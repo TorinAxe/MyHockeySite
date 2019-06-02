@@ -43,4 +43,9 @@ function hasNext($SQL_Table)//Получить следующую строку �
 {
     return mysqli_fetch_assoc($SQL_Table);
 }
+
+function isUser()
+{
+    return isset($_SESSION['username']);
+}
 ?>

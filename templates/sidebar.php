@@ -5,7 +5,7 @@
             $category_list = mysqli_query($db,"Select * From items_category");
             while ($row = hasNext($category_list))
             {
-                echo '<li><a href='.'"'.'./view_cat.php?category_id='.$row['id'].'"'.'>'.$row['name'].'</a>';
+                echo '<li><a href='.'"'.'./index.php?category_id='.$row['id'].'"'.'>'.$row['name'].'</a>';
             }
         ?>
     </ul>

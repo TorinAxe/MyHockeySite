@@ -48,7 +48,7 @@
 	text-align: right;
 }
 
-.search_dimon_with_utochka input {
+.search_dimon_with_utochka #search_edit {
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 250px;
@@ -64,6 +64,76 @@
 	width: 75px;
 	height: 39px;
 	border-radius: 0px  5px 5px 0px;
+}
+
+.search_dimon_with_utochka #filter_option {
+	display: none;
+	width: 100%;
+	margin-top: 15px;
+	padding: 10px 10px;
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+
+.range{
+	min-width: 250px;
+	max-width: 250px;
+	background:-webkit-linear-gradient(left ,orangered 0%, orangered 100%,#fff 50%, #fff 100%);
+	-webkit-appearance: none;
+	border-radius:4px;
+	height:10px;
+	outline : none;
+	border:1px solid #D4D4D4;
+}
+
+.range::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	width:9px;
+	height:18px;
+	background:rgba(11, 35, 38, 1);
+	border-radius:5px;
+	cursor:pointer;
+	transition:.1s;
+}
+
+.range::-webkit-slider-thumb:hover, .range::-webkit-slider-thumb:active{
+	width:10px;
+	height:20px;
+}
+
+
+
+.block_inline{
+	display: inline-block;
+}
+
+.block_left{
+	text-align: left;
+}
+
+.block_250{
+	max-width: 250px;
+}
+
+.line
+{
+	line-height: 20px;
+	margin-top: 5px;
+}
+
+.line input{
+	display: inline-block;
+	width: 15px ;
+	line-height: normal;
+	vertical-align: middle;
+}
+
+.line p{
+	display: inline-block;
+	margin-left: 10px;
+	color: gray;
+	line-height: normal;
+	vertical-align: middle;
 }
 
 .btn{
@@ -172,4 +242,17 @@
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
+}
+
+
+#back-top{
+	background: url("../images/up1.png") no-repeat top left;
+	height: 60px;
+	width: 60px;
+	bottom: 10%;
+	right: 10%;
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	z-index: 999;
 }

@@ -1,7 +1,7 @@
 <?php
 session_start();
 header('Content-Type: text/html; charset=utf-8');
-include_once "functions/mysql_func.php";
+include_once "server/mysql_func.php";
 include "templates/header.php";
 include "templates/content_begin.php";
 ?>
@@ -24,7 +24,7 @@ include "templates/content_begin.php";
                     <div class="cleaner h10"></div>
 
                     <input type="reset" value="Очистить" id="reset" name="reset" class="submit_btn float_l" />
-                    <input type="sumbit" value="Отправить" id="submit" name="submit" class="submit_btn float_r" />
+                    <input type="submit" value="Отправить" id="submit" name="submit" class="submit_btn float_r" />
 
                 </form>
             </div>

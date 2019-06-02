@@ -30,9 +30,9 @@
         <div class="user_control">
                 <?php
                     if(isset($_SESSION['username'])){
-                        echo '<span>Добро пожаловать, '.$_SESSION['username']."</span>
-                        <a href=\"shoppingcart.php\"><b>Ваша корзина</b><img src='./images/cart.png'/></a>";
-                        echo '<button class="shadow_btn" type="submit" onclick="location.href=\'exit.php\'">Выйти</button>';
+                        echo '<a href="personal_account.php">Личный кабинет</a>  
+                        <a href="shoppingcart.php"><b>Ваша корзина</b><img src="./images/cart.png"/></a>';
+                        echo '<button class="shadow_btn" type="submit" onclick="location.href=\'server\\\exit.php\'">Выйти</button>';
                     }
                     else {
                         include "templates/login_form.php";
